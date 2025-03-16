@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Titel -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_view_report"
+        android:textColor="@color/primary_text_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:contentDescription="Titel: Umsätze" />
+
+    <!-- Anzeige für keine Daten -->
+    <TextView
+        android:id="@+id/textViewEmptyReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Noch keine Berichte verfügbar. Bitte später erneut versuchen."
+        android:textSize="16sp"
+        android:textColor="@color/secondary_text_color"
+        android:gravity="center"
+        android:visibility="gone"
+        android:contentDescription="Keine Berichte verfügbar" />
+
+    <!-- ProgressBar für das Laden -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <!-- RecyclerView für Berichte -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewReports"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zurück"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorSecondaryVariant"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+
+    <!-- Button für Statistik -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonShowStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Statistik anzeigen"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

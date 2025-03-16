@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Definiert eine Form, die als Hintergrund oder als Layout-Element verwendet werden kann -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Setzt die Hintergrundfarbe auf Weiß -->
+    <solid android:color="@android:color/white" />
+
+    <!-- Setzt den Radius der Ecken auf 12dp, wodurch die Ecken abgerundet werden -->
+    <corners android:radius="12dp" />
+
+    <!-- Setzt die Erhöhung (Schattenwurf) auf 4dp, um eine leichte 3D-Darstellung zu erzeugen -->
+    <elevation android:elevation="4dp" />
+</shape>

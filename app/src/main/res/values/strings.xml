@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">BudgetTracker</string>
+    <string name="logout">Logout</string>
+    <string name="willkommen">Willkommen!</string>
+    <string name="benutzername">Benutzername</string>
+    <string name="login">Login</string>
+    <string name="registrieren">Registrieren</string>
+    <string name="password">Password</string>
+    <string name="PasswordBestätigen">Password bestätigen </string>
+    <string name="editTextConfirmpassword">editTextConfirmpassword</string>
+    <string name="balance_label">Kontostand:</string>
+    <string name="button_add_transaction">Transaktion hinzufügen</string>
+    <string name="button_view_report">Umsätze</string>
+    <string name="button_logout">Logout</string>
+    <string name="no_transactions">Keine Transaktionen verfügbar.</string>
+    <string name="logout_title">Abmelden</string>
+    <string name="logout_confirmation">Möchten Sie sich wirklich abmelden?</string>
+    <string name="logout_yes">Ja</string>
+    <string name="logout_no">Nein</string>
+    <string name="error_not_logged_in">Bitte melden Sie sich an.</string>
+    <string name="default_category">Unbekannte Kategorie</string>
+    <string name="default_description">Keine Beschreibung verfügbar</string>
+    <string name="type_income">Typ: Einnahme</string>
+    <string name="type_expense">Typ: Ausgabe</string>
+    <string name="amount_format">Betrag: %.2f €</string>
+    <string name="category_label">Kategorie: %s</string>
+    <string name="date_label">Datum: %s</string>
+    <string name="description_label">Beschreibung: %s</string>
+    <string name="invalid_date">Ungültiges Datum</string>
+    <string name="no_data">Keine Daten verfügbar</string>
+    <string name="error_loading_transactions">Fehler beim Laden der Transaktionen. Bitte versuchen Sie es später erneut.</string>
+    <string name="zum_login">Zum Login</string>
+    <string name="bereits_account">Bereits ein Konto?</string>
+    <string name="willkommen_budget_tracker">Willkommen zu Budget Tracker</string>
+    <string name="delete_confirmation_title">Bestätigung</string>
+    <string name="delete_confirmation_message">Bist du sicher, dass du diese Transaktion löschen möchtest?</string>
+    <string name="delete_error">Fehler beim Löschen der Transaktion. Bitte versuche es erneut.</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="delete">Löschen</string>
+    <string name="no_category">Keine Kategorie</string>
+    <string name="no_description">Keine Beschreibung</string>
+
+    <string name="edit_transaction_title">Transaktion bearbeiten</string>
+    <string name="save">Speichern</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="transaction_updated">Transaktion erfolgreich aktualisiert</string>
+    <string name="transaction_update_error">""Fehler beim Aktualisieren der Transaktion""</string>
+
+
+
+</resources>

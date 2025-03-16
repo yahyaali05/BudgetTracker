@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/gray_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_background"
+        android:layout_margin="8dp">
+
+        <!-- Betrag -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Betrag"
+            android:textStyle="bold">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Kategorie -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kategorie"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Datum -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Datum auswählen"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Typ (RadioGroup) -->
+        <RadioGroup
+            android:id="@+id/radioGroupType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Einnahme"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButtonExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ausgabe"
+                android:layout_marginStart="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+        </RadioGroup>
+
+        <!-- Beschreibung -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Beschreibung"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Speichern-Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSaveTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Speichern"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            app:cornerRadius="8dp" />
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zurück"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorSecondaryVariant"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"/>
+
+    </LinearLayout>
+</ScrollView>
