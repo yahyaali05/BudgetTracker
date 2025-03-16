@@ -76,7 +76,7 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     //test
-
+//test2
     /**
      * Aktualisiert die Anzeige des Dashboards.
      */
